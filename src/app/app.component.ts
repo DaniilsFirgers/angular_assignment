@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
 
+  constructor() {}
   ngOnInit(): void {
-    
+
   }
-  title = 'sdasdasdasd';
-  child = "hello"
+
+  links = [{route: "/", name: "Home"}, {route: "/cars", name: "Cars"}, {route: "/about", name: "About"}]
 }

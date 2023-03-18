@@ -1,0 +1,27 @@
+.inner-nav-bar{
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+}
+.outer-nav-bar{
+    height: 48px;
+    padding: 0;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    background: purple;
+    justify-content: space-between
+}
+
+.link{
+    width: fit-content;
+    color: white
+}
+.app-name{
+    margin-bottom: 0;
+    margin-left: 10px;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+}
+
