@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ActiveCarAds {
-  private url = 'http://localhost:3001/cars?token=1234';
+  private url = `http://localhost:3001/cars?token=${process.env["TOKEN"]}`;
    
   constructor(private httpClient: HttpClient) { }
   

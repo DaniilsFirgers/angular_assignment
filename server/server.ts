@@ -28,7 +28,7 @@ function checkToken(req: Request, res: Response, next: NextFunction){
         res.status(403).json({reason: "Access fobidden. Please provide token."})
     }
     if(token){
-        if(token == '1234'){
+        if(token == process.env["TOKEN"]){
             next()
         }
         else{
