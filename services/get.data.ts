@@ -10,7 +10,7 @@ export class ActiveCarAds {
   constructor(private httpClient: HttpClient) { }
   
   getPosts(){
-    return this.httpClient.get(this.url);
+    return this.httpClient.get(this.url, {observe: 'response'});
   }
   
 }

@@ -14,8 +14,13 @@ export class CarsComponent {
   ngOnInit(): void {
       this.carAds.getPosts()
       .subscribe(res=>{
-        console.log(res)
-        this.posts = res;
+        if(res.status == 200){
+          console.log(res)
+          this.posts = res.body;
+        }
+        else{
+          console.log(res)
+        }
       })
   }
 }
