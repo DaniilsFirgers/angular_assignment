@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
+import { CarDetailComponent } from './car-detail/car-detail.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent, 
-    HelloWorldComponent, CarsComponent, 
+    HelloWorldComponent, CarsComponent, CarDetailComponent, 
   ],
   imports: [
     BrowserModule,

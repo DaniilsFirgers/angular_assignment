@@ -1,0 +1,11 @@
+.cars-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-name{
+    padding-top: 10px;
+    text-align: center;
+}

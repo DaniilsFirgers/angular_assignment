@@ -1,0 +1,16 @@
+.car-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: max-content;
+    background:lightseagreen;
+    opacity: 0.7;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.car-card:hover{
+    transform: scale(1.07, 1.07);
+    background: #5F9EA0;
+}

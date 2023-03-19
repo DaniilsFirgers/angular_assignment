@@ -1,4 +1,6 @@
 import json from 'json-server'
+import * as dotenv from 'dotenv'
+dotenv.config()
 const server = json.create()
 const router = json.router('./db.json') 
 import { NextFunction, Request, Response } from "express";
@@ -28,7 +30,7 @@ function checkToken(req: Request, res: Response, next: NextFunction){
         res.status(403).json({reason: "Access fobidden. Please provide token."})
     }
     if(token){
-        if(token == process.env["TOKEN"]){
+        if(token == process.env['TOKEN']){
             next()
         }
         else{

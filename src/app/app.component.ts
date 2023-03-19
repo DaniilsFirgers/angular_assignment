@@ -10,7 +10,7 @@ export class AppComponent implements OnInit{
 
   constructor() {}
   ngOnInit(): void {
-    console.log(process)
+
   }
 
   links = [{route: "/", name: "Home"}, {route: "/cars", name: "Cars"}, {route: "/about", name: "About"}]
