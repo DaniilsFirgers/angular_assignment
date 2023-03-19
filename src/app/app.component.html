@@ -1,14 +1,15 @@
 <div>  
     <div class="outer-nav-bar" >
     <p class="app-name">Carify</p>
-    <mat-nav-list class="inner-nav-bar">  
-       
+    <mat-nav-list class="inner-nav-bar">        
         <a mat-list-item href={{link.route}} *ngFor="let link of links" class="link"> {{link.name}} </a>  
      </mat-nav-list> 
     </div> 
     <div class="main-content">
         <main>
-        <router-outlet ></router-outlet>
+
+        <router-outlet>
+        </router-outlet>
     </main>
     </div>
     
