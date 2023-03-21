@@ -1,0 +1,21 @@
+.home-section{
+    color: #4b4747;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.page-name{
+    margin-top: 10px;
+    color:#4b4747;
+}
+.tech-list{
+    margin-left: auto
+}
+
+.dog-gif{
+    border-radius: 5px;
+    margin-top:10px;
+    box-shadow: 5px 5px 10px purple;
+    opacity: 0.7;
+}
