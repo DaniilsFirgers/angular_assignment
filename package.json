@@ -25,6 +25,7 @@
     "dotenv": "^16.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "uuid": "^9.0.0",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
@@ -33,6 +34,7 @@
     "@angular/compiler-cli": "^15.2.0",
     "@types/jasmine": "~4.3.0",
     "@types/json-server": "^0.14.4",
+    "@types/uuid": "^9.0.1",
     "jasmine-core": "~4.5.0",
     "json-server": "^0.17.2",
     "karma": "~6.4.0",

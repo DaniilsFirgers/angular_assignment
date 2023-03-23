@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import {FormControl} from '@angular/forms';
 import { PostCarAdd} from "../../../services/post.data"
-
+import { v4 as uuidv4 } from 'uuid';
 
 
 @Component({
@@ -26,7 +26,7 @@ export class CarAddComponent {
 	}
   onSubmitForm(){
     const newCar = {
-      id: '43',
+      id: uuidv4(),
       brand: this.selectedBrand,
       model: this.model,
       "year_of_production": this.yearProduction,
