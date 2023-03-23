@@ -24,6 +24,17 @@ server.get('/cars', (req, res)=>{
     }
 })
 
+server.delete('/cars', (req, res)=>{
+    const id = req.query['id']
+    const filteredCar = db.cars.find((el)=>el.id == id as string)
+    db.cars = db.cars.filter((el)=>el.id !== filteredCar!.id)
+
+})
+server.post('/cars', (req, res)=>{
+    const body = req.body
+    db.cars.push(body)
+})
+
 function checkToken(req: Request, res: Response, next: NextFunction){
     const token = req.query['token']
     if(token == undefined){

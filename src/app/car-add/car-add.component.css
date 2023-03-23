@@ -1,0 +1,42 @@
+.ind-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+.ind-item-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-holder{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-name{
+    margin-left: auto;
+    margin-right: auto
+}
+
+.submit-btn{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    font-size: medium;
+    width:fit-content
+}

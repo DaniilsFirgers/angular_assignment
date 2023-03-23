@@ -2,7 +2,8 @@
     <h2 class="section-name">Cars On Sale</h2>
     <div class="cars-holder">
         <div *ngFor="let post of posts">
-            <app-car-detail [car]="post"></app-car-detail>
+            <app-car-detail [car]="post" (carToDelete)="onCarDeleteHandle($event)" ></app-car-detail>
+
         </div>
     </div>
 </div>

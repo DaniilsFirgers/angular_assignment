@@ -1,0 +1,52 @@
+   
+   <div class="main-section">
+   <div class="form-holder">
+        <h1 class="form-name">Add a new car</h1>
+    <div class="ind-item">
+        <mat-label>Model</mat-label>
+        <input matInput [value]="model" [(ngModel)]="model">
+    </div>
+
+    <div class="ind-item">
+
+        <mat-label>Price</mat-label>
+        <input type="number" matInput [value]="price" [(ngModel)]="price"      ng-model="string"   >
+
+    </div>
+   
+    <div class="ind-item">
+        <mat-label>Year of production</mat-label>
+        <input type="number" matInput [value]="yearProduction" [(ngModel)]="yearProduction"      ng-model="string"   >
+    </div>
+  
+
+
+  <div class="ind-item">
+    <mat-label>Condition</mat-label>
+        <select #teams (change)="onConditionSelected(teams.value)">
+            <option>Used</option>
+            <option>New</option>
+        </select>
+    </div>
+
+    <div class="ind-item">
+        <mat-label>Brand</mat-label>
+            <select #teams (change)="onBrandSelected(teams.value)">
+                <option>Mercedes</option>
+                <option>BMW</option>
+                <option>Audi</option>
+            </select>
+        </div>
+
+
+    <div class="ind-item">
+
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="description" ></textarea>
+    </div>
+    <div class="ind-item-btn">
+        <button (click)="onSubmitForm()" class="submit-btn">Submit</button>
+    </div>
+
+</div>
+</div>

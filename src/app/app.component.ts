@@ -13,5 +13,5 @@ export class AppComponent implements OnInit{
 
   }
 
-  links = [{route: "/", name: "Home"}, {route: "/cars", name: "Cars"}, {route: "/about", name: "About"}]
+  links = [{route: "/", name: "Home"}, {route: "/cars", name: "Cars"}, {route: "/add",  name: "Add car"},]
 }
