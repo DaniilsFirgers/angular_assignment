@@ -54,4 +54,3 @@ function checkToken(req: Request, res: Response, next: NextFunction){
 server.listen(PORT, () => {
     console.log(`JSON Server is running on port ${PORT}`);
   });
-  // "server": "json-server -p 3001 ./server/db.json"
