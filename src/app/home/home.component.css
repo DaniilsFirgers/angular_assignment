@@ -4,6 +4,9 @@
     flex-direction: column;
     align-items: center;
 } 
+.main-section{
+    height: fit-content;
+}
 
 .page-name{
     margin-top: 10px;

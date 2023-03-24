@@ -25,8 +25,8 @@ export class CarsComponent {
       })
   }
   async onCarDeleteHandle(eventData: {car: any}){
-    await this.carDeleteAdd.deleteCar(eventData.car).subscribe(res=>console.log('res', res))
-    await this.carAds.getPosts()
+   this.carDeleteAdd.deleteCar(eventData.car).subscribe(res=>console.log('res', res))
+    this.carAds.getPosts()
       .subscribe(res=>{
         if(res.status == 200){
           console.log(res)
