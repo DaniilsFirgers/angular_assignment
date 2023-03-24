@@ -8,7 +8,9 @@ General Info
 
 ## Development server
 
-Run `ng serve` for a dev server. 
+Run `ng serve` or `npm run start` for a dev server. 
+Run `npm run server` to start JSON server on `http://localhost:3001`.
 Navigate to `http://localhost:4200/` and you will be redirected to `http://localhost:4200/home` that is treated as a homepage.
 
+## Ads Page
 ![angular](https://github.com/DaniilsFirgers/angular_assignment/blob/main/project_pictures/ads_picture.png)
