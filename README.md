@@ -11,4 +11,4 @@ General Info
 Run `ng serve` for a dev server. 
 Navigate to `http://localhost:4200/` and you will be redirected to `http://localhost:4200/home` that is treated as a homepage.
 
-![angular]()
+![angular](https://github.com/DaniilsFirgers/angular_assignment/blob/main/project_pictures/ads_picture.png)
