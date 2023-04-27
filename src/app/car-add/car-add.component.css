@@ -38,5 +38,9 @@
     background-color: green;
     border-radius: 5px;
     font-size: medium;
-    width:fit-content
+    width:fit-content;
+    cursor:pointer
+}
+.error-message{
+    color: red;
 }

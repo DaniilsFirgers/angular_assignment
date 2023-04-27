@@ -5,18 +5,20 @@
     <div class="ind-item">
         <mat-label>Model</mat-label>
         <input matInput [value]="model" [(ngModel)]="model">
+        <span *ngIf="formSubmitted && model === ''" class="error-message">Model is a required field!</span>
     </div>
 
     <div class="ind-item">
-
         <mat-label>Price</mat-label>
         <input type="number" matInput [value]="price" [(ngModel)]="price"      ng-model="string"   >
-
+        <span *ngIf="formSubmitted && price >=0" class="error-message">Price is should be greater than 0!</span>
+   
     </div>
    
     <div class="ind-item">
         <mat-label>Year of production</mat-label>
         <input type="number" matInput [value]="yearProduction" [(ngModel)]="yearProduction"      ng-model="string"   >
+        <span *ngIf="formSubmitted && yearProduction >2023" class="error-message">Year of production cannot exceed 2023!</span>
     </div>
   
 
@@ -42,10 +44,12 @@
     <div class="ind-item">
 
     <mat-label>Description</mat-label>
-    <textarea matInput [(ngModel)]="description" ></textarea>
+    <textarea  matInput [(ngModel)]="description" ></textarea>
+    <span *ngIf="formSubmitted && description === ''" class="error-message">Description is a required field!</span>
     </div>
     <div class="ind-item-btn">
-        <button (click)="onSubmitForm()" class="submit-btn">Submit</button>
+        <button   (click)="onSubmitForm()" class="submit-btn">Submit</button>
+      
     </div>
 
 </div>

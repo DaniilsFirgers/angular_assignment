@@ -1,7 +1,13 @@
 <div class="main-section">
+    <div class="filter-holder">
+        <label for="brand-select">Filter by brand:</label>
+        <select id="brand-select" [(ngModel)]="selectedBrand" (change)="filterPosts($event)">
+          <option *ngFor="let brand of brands" [value]="brand">{{brand}}</option>
+        </select>
+      </div>
     <h2 class="section-name">Cars On Sale</h2>
     <div class="cars-holder">
-        <div *ngFor="let post of posts">
+        <div *ngFor="let post of filteredPosts">
             <app-car-detail [car]="post" (carToDelete)="onCarDeleteHandle($event)" ></app-car-detail>
 
         </div>

@@ -5,7 +5,7 @@
     align-items: center;
 } 
 .main-section{
-    height: fit-content;
+    height: 100vh;
 }
 
 .page-name{
